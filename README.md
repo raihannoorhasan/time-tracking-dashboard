@@ -48,7 +48,7 @@ This a amazing project for junior level. I have completed these project using HT
 
 ## Author
 
-- Frontend Mentor - [https://www.frontendmentor.io/profile/yourusername]
+- Frontend Mentor - [https://www.frontendmentor.io/profile/raihannoorhasan]
 - Twitter - [https://www.twitter.com/raihannoorhasan]
 - email - [raihanc39@gmail.com]
 
