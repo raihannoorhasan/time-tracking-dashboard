@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  /* background colors */
+  --profile-bg: hsl(246, 80%, 60%);
+  --work-bg: hsl(15, 100%, 70%);
+  --play-bg: hsl(195, 74%, 62%);
+  --study-bg: hsl(348, 100%, 68%);
+  --exercise-bg: hsl(145, 58%, 55%);
+  --social-bg: hsl(264, 64%, 52%);
+  --self-care-bg: hsl(43, 84%, 65%);
+  --body-bg: hsl(226, 43%, 10%);
+  --tracking-box-bg: hsl(235, 46%, 20%);
+  --tracking-box-bg-hover: hsl(236, 41%, 34%);
+
+  /* Fonts colors */
+  --primary-font-color-300: hsl(0, 0%, 100%);
+  --primary-font-color-400: hsl(235, 45%, 61%);
+  --primary-font-color-500: hsl(236, 100%, 87%);
+
+  /* Font Sizes */
+  --fs-1: 0.9375rem;
+  --fs-2: 1.0625rem;
+  --fs-3: 1.125rem;
+  --fs-4: 1.5rem;
+  --fs-5: 2rem;
+  --fs-6: 2.5rem;
+  --fs-7: 3.5rem;
+
+  /* Sizer */
+  --sizer-1: 1.875rem;
+  --sizer-2: 2.25rem;
+}
+
+/* CSS RESET */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Utilities */
+.profile-bg {
+  background-color: var(--profile-bg);
+}
+/* 
+.work-bg {
+  background-color: var(--work-bg);
+}
+
+.play-bg {
+  background-color: var(--play-bg);
+}
+
+.study-bg {
+  background-color: var(--study-bg);
+}
+
+.exercise-bg {
+  background-color: var(--exercise-bg);
+}
+
+.social-bg {
+  background-color: var(--social-bg);
+}
+
+.self-care-bg {
+  background-color: var(--self-care-bg);
+} 
+*/
+
+.body-bg {
+  background-color: var(--body-bg);
+}
+
+.tracking-box-bg {
+  background-color: var(--tracking-box-bg);
+}
+
+.tracking-box-bg-hover {
+  background-color: var(--tracking-box-bg-hover);
+}
+
+.primary-font-color-300 {
+  color: var(--primary-font-color-300);
+}
+
+.primary-font-color-400 {
+  color: var(--primary-font-color-400);
+}
+
+.primary-font-color-500 {
+  color: var(--primary-font-color-500);
+}
+
+.fs-sub-title {
+  font-size: var(--fs-1);
+}
+
+.fs-profile-time-track {
+  font-size: var(--fs-2);
+}
+
+.fs-category {
+  font-size: var(--fs-3);
+}
+
+.fs-profile-name {
+  font-size: clamp(var(--fs-4), 5vw, var(--fs-6));
+}
+
+.fs-tracking-box-time {
+  font-size: clamp(var(--fs-5), 5vw, var(--fs-7));
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.padding-1 {
+  padding: var(--sizer-1);
+}
+
+.padding-top-1 {
+  padding-top: var(--sizer-2);
+}
+
+.profile-img-size {
+  width: 4.125rem;
+  aspect-ratio: 1;
+}
+
+.profile-img-border {
+  border: 2px solid var(--primary-font-color-300);
+  border-radius: 50%;
+}
+
+.border-radius-100 {
+  border-radius: 1em;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 2rem;
+}
+
+.container {
+  width: min(95%, 70rem);
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 5rem;
+}
+
+.profile-time-tracking {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profile {
+  gap: 1rem;
+  align-items: center;
+}
+
+.category,
+.track-box-times {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tracking-box {
+  cursor: pointer;
+  position: relative;
+  transition: background-color 300ms ease-in-out;
+}
+
+.tracking-box:hover {
+  background-color: var(--tracking-box-bg-hover);
+}
+
+.tracking-box::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  top: -3rem;
+
+  background-repeat: no-repeat;
+  background-position: top -25% right 5%;
+  z-index: -1;
+  border-radius: 1em;
+}
+
+.tracking-box.work::after {
+  background-color: var(--work-bg);
+  background-image: url(./images/icon-work.svg);
+}
+
+.tracking-box.play::after {
+  background-color: var(--play-bg);
+  background-image: url(./images/icon-play.svg);
+}
+
+.tracking-box.study::after {
+  background-color: var(--study-bg);
+  background-image: url(./images/icon-study.svg);
+}
+.tracking-box.exercise::after {
+  background-color: var(--exercise-bg);
+  background-image: url(./images/icon-exercise.svg);
+}
+.tracking-box.social::after {
+  background-color: var(--social-bg);
+  background-image: url(./images/icon-social.svg);
+}
+.tracking-box.self-care::after {
+  background-color: var(--self-care-bg);
+  background-image: url(./images/icon-self-care.svg);
+}
+
+@media screen and (min-width: 60rem) {
+  .dashboard-grid {
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-end;
+  }
+  .profile-section {
+    grid-row: span 2;
+    align-self: stretch;
+  }
+  .profile {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 5rem;
+  }
+  .profile-data {
+    padding-top: var(--sizer-2);
+  }
+  .profile-time-tracking {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  .profile-img-size {
+    width: 4.875rem;
+  }
+  .track-box-times {
+    padding-top: var(--sizer-1);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
