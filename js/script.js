@@ -3,11 +3,13 @@
 import editItem from './utilities/editItem.js';
 import renderItem from './utilities/renderItem.js';
 
+
 async function loadData() {
     const res = await fetch("/frontend-mentor-challenges/time-tracking-dashboard/js/data.json");
     return await res.json()
 }
 const data = await loadData()
+
 
 const timeTracks = document.querySelectorAll('.time-track')
 let checkedTrack = 'weekly';
