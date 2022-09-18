@@ -107,31 +107,6 @@ h6 {
 .profile-bg {
   background-color: var(--profile-bg);
 }
-/* 
-.work-bg {
-  background-color: var(--work-bg);
-}
-
-.play-bg {
-  background-color: var(--play-bg);
-}
-
-.study-bg {
-  background-color: var(--study-bg);
-}
-
-.exercise-bg {
-  background-color: var(--exercise-bg);
-}
-
-.social-bg {
-  background-color: var(--social-bg);
-}
-
-.self-care-bg {
-  background-color: var(--self-care-bg);
-} 
-*/
 
 .body-bg {
   background-color: var(--body-bg);
