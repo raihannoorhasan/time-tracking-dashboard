@@ -48,8 +48,8 @@ This a amazing project for junior level. I have completed these project using HT
 
 ## Author
 
-- Frontend Mentor - [@raihannoorhasan]
-- Twitter - [@raihannoorhasan]
+- Frontend Mentor - [https://www.frontendmentor.io/profile/yourusername]
+- Twitter - [https://www.twitter.com/raihannoorhasan]
 - email - [raihanc39@gmail.com]
 
 ## If you have any suggestion about this project or to improve my skill feel free to suggest me, must be appreciated.
