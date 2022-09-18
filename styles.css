@@ -219,6 +219,10 @@ h6 {
   border-radius: 1em;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
@@ -247,14 +251,33 @@ main {
 }
 
 .profile {
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
+}
+
+.time-track {
+  transition: color 300ms ease-out;
+}
+
+.time-track:hover {
+  color: var(--primary-font-color-300);
+}
+
+.time-track.active {
+  color: var(--primary-font-color-300);
 }
 
 .category,
 .track-box-times {
   justify-content: space-between;
   align-items: center;
+}
+
+.icon-ellipsis {
+  cursor: pointer;
+}
+.icon-ellipsis:hover {
+  filter: brightness(0) invert(1);
 }
 
 .tracking-box {
@@ -308,7 +331,25 @@ main {
   background-image: url(./images/icon-self-care.svg);
 }
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 40rem) and (max-width: 65rem) {
+  .dashboard-grid {
+    column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-end;
+  }
+  .profile-section {
+    grid-column: span 2;
+  }
+}
+@media screen and (min-width: 38.125rem) and (max-width: 48.75rem) {
+  .track-box-times {
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 65rem) {
   .dashboard-grid {
     gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
@@ -322,9 +363,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 5rem;
-  }
-  .profile-data {
-    padding-top: var(--sizer-2);
+    gap: var(--sizer-2);
   }
   .profile-time-tracking {
     flex-direction: column;
