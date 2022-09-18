@@ -16,6 +16,6 @@
 .prettierignore
 
 design
+js
 style-guide.md
 README-g.md
-js
