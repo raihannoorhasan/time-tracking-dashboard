@@ -198,6 +198,7 @@ h6 {
   cursor: pointer;
 }
 
+/* Components */
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
@@ -306,6 +307,7 @@ main {
   background-image: url(./images/icon-self-care.svg);
 }
 
+/* media queries */
 @media screen and (min-width: 40rem) and (max-width: 65rem) {
   .dashboard-grid {
     column-gap: 2rem;
